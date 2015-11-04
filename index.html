@@ -109,11 +109,12 @@
   <script type="text/javascript" src="./jquery.fullPage.js"></script>
   <script type="text/javascript" src="./examples.js"></script>
 
+
   <script type="text/javascript">
     $(document).ready(function() {
       $('#fullpage').fullpage({
         verticalCentered: false,
-        sectionsColor: ['#cccccc', '#cccccc', '#cccccc', '#cccccc'],
+        sectionsColor: ['#fff', '#fff', '#fff', '#fff'],
         afterRender: function(){
 
 
@@ -123,6 +124,8 @@
       });
     });
   </script>
+
+
 
 </head>
 <body>
@@ -167,7 +170,7 @@
         <div class="col-md-6">
           Max
         </div>
-
+width="700" height="393"
     </div>
 -->
 
@@ -181,15 +184,15 @@
       <div class="slide" id="slide1">
 
 
-
-<iframe src="https://player.vimeo.com/video/143569369" width="700" height="393" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<div class="col-md-12">
+<iframe src="https://player.vimeo.com/video/143569369" class="myIframe" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 <p style="padding: 50px;">This is a short film about Lululemon's Ambassador Camp which took place on October 13-15, 2015. The voiceovers in the film are actual lines said by the group from around the campfire. </p>
-
+</div>
 
       </div>
       <div class="slide" id="slide2">
-<iframe src="https://player.vimeo.com/video/144199021" width="700" height="393" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/144199021" class="myIframe" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 <p style="padding: 50px;">In the summer of 2015, Chris traveled across the country documenting an adventure fundraiser, Tour de Fox. In 3.5 months, the Tour de Fox crew climbed 49 mountains, visited 48 states, drove 14,000 miles and raised over $2,500,000 for the Michael J. Fox Foundation for Parkinsons. This is just one of many videos Chris made over the summer - the rest can be found <a href="https://www.youtube.com/channel/UCe89PYImxI6d6dAxfU_YTlQ">here</a></p>
 
@@ -211,6 +214,13 @@
   </div>
 
 </div>
+  <script type="text/javascript" language="javascript"> 
+$('.myIframe').css('height', $(window).height()*.5+'px');
+</script>
+
+  <script type="text/javascript" language="javascript"> 
+$('.myIframe').css('width', $(window).width()*.5 +'px');
+</script>
 
 </body>
 </html>
