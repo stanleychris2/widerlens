@@ -30,7 +30,7 @@
   /* Style for our header texts
   * --------------------------------------- */
   h1{
-    font-size: 3em;
+    font-size: 4em;
     font-family: monospace;
     color: #fff;
     margin:0;
@@ -39,12 +39,17 @@
 
   h2{
     font-family: monospace;
+    font-size: 3em;
+  }
+
+  h3{
+    font-family: monospace;
     font-size: 2em;
   }
 
   p{
     font-family: monospace;
-    font-size: 16px;
+    font-size: 1em;
   }
 
   /* Centered texts in each section
@@ -114,7 +119,7 @@
     $(document).ready(function() {
       $('#fullpage').fullpage({
         verticalCentered: false,
-        sectionsColor: ['#fff', '#fff', '#fff', '#fff'],
+        sectionsColor: ['#fff', '#fff', '#fff', '#fff', '#fff'],
         afterRender: function(){
 
 
@@ -198,20 +203,51 @@ width="700" height="393"
 
 </div>
 
-
-
       <div class="slide" id="slide2"><h1>Ariel Portfolio</h1></div>
     </div>
 
   </div>
   
-
-  
   <div class="section" id="section3">
 
-    <p>Work With Us</p>
+    <h2>Team</h2>
+
+    <div style="padding: 50px" class="row">
+      
+      <div class="col-md-6">
+        <img src="./stanley_headshot.png" ></img>
+        <h3>Chris Stanley</h3>
+        <p style="padding:10px;"> Whether I'm shooting film, editing it, or simply can't sleep because of it - I'm always searching for THAT connecting thread which leaves a lasting memory.</p>
+      </div>
+      
+      <div class="col-md-6">
+        <h3>Max Odenheimer</h3>
+        <p style="padding:10px;"> some text goes heresome text goes heresome text goes heresome text goes heresome text goes heresome text goes here</p>
+      </div>
+    
+    </div>
 
   </div>
+  
+  <div class="section" id="section4">
+<h2> Contact </h2>
+    <div class="col-md-12" style="padding: 15%;">
+    
+    <p> We'd love to work with you. We shoot events, product videos, podcast episodes, and larger productions as well. We'd love to hear from you and learn about your project.</p>
+
+ 
+      <p><a href="mailto:stanleychris2@gmail.com?Subject=Wider%20Lens%20Project" target="_top">Send us an email</a></p>
+    </div>
+</div>
+
+</div>
+
+
+
+  </div>
+
+
+
 
 </div>
   <script type="text/javascript" language="javascript"> 
